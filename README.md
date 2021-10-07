@@ -31,6 +31,7 @@ Go to http://0.0.0.0:8000/ to find help-response
 	Get User Login		:	/getlogin/<id>
 	
 ## TASKS:
+- optimise everything!!!
 - comments
 - upgrade views.intersec
 - upgrade update_base command maybe with proxy
