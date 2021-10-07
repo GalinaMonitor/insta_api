@@ -1,6 +1,7 @@
 # Insta_api
 ## Preparations
 You should have Docker+Docker-compose installed. 
+
 All commands made from insta_api folder
 ## First launch
 	docker-compose up --build
