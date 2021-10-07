@@ -29,3 +29,9 @@ Go to http://0.0.0.0:8000/ to find help-response
 	Blogger_followers	:	/bloggers/<id>
 	Intersections		:	/intersect
 	Get User Login		:	/getlogin/<id>
+	
+## TASKS:
+- comments
+- upgrade views.intersec
+- upgrade update_base command maybe with proxy
+- add views to show ratio blogger/blogger
