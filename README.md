@@ -1,6 +1,6 @@
 # Insta_api
 ## Preparations
-You should have Docker+Docker-compose installed. 
+You should have Docker+Docker-compose installed.
 
 All commands made from insta_api folder
 ## First launch
@@ -20,6 +20,12 @@ All commands made from insta_api folder
 ## Add_example_bloggers
 	docker-compose run django python manage.py add_bloggers
 ## API
-Access is available with login/password. 
+Access is available with login/password.
 
 Go to http://0.0.0.0:8000/ to find help-response
+
+	User list			:	/users
+	Blogger list		:	/bloggers
+	Blogger_followers	:	/bloggers/<id>
+	Intersections		:	/intersect
+	Get User Login		:	/getlogin/<id>
