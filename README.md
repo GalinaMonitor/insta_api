@@ -24,7 +24,7 @@ Access is available with login/password.
 
 Go to http://0.0.0.0:8000/ to find help-response
 
-	User list			:	/users
+	User list		:	/users
 	Blogger list		:	/bloggers
 	Blogger_followers	:	/bloggers/<id>
 	Intersections		:	/intersect
