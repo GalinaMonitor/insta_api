@@ -18,6 +18,7 @@ class InstaUserSerializer(serializers.ModelSerializer):
 		model = InstaUser
 		fields = ['id', 'user_id', 'user_follower']
 
+# Special view and serializer for user_login(Just for security)
 class InstaUserFullSerializer(serializers.ModelSerializer):
 	user_follower = InstaBloggerSerializer(read_only=True)
 	class Meta:
