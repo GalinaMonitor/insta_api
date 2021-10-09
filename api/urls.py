@@ -8,7 +8,7 @@ urlpatterns = [
 	path('insta_users/<int:pk>/', views.InstaUserDetail.as_view(), name='user_detail'),
 	path('bloggers/', views.InstaBloggerList.as_view(), name='blogger_list'),
 	path('bloggers/<int:id>/', views.InstaBloggerDetail.as_view(), name='blogger_detail'),
-	path('intersect/', views.Intersections.as_view()),
+	path('intersect/<str:blogger1>/<str:blogger2>', views.Intersections.as_view()),
 	path('getlogin/<int:id>/', views.GetNameInstaUser.as_view()),
 	path('', views.Help.as_view())
 ]

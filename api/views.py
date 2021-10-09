@@ -7,9 +7,9 @@ from .models import InstaUser, InstaBlogger
 from instabot import Bot
 
 class Intersections(APIView):
-	def get(self, request):
-		blogger1 = get_object_or_404(InstaBlogger, blogger_name='katyushka_tyan')
-		blogger2 = get_object_or_404(InstaBlogger, blogger_name='dima_gordey')
+	def get(self, request, blogger1, blogger2):
+		blogger1 = get_object_or_404(InstaBlogger, blogger_name=blogger1)
+		blogger2 = get_object_or_404(InstaBlogger, blogger_name=blogger2)
 		queryset3 = InstaUser.objects.values_list('user_id').filter(user_follower = blogger1.id)
 		queryset4 = InstaUser.objects.values_list('user_id').filter(user_follower = blogger2.id)
 		result = queryset3.intersection(queryset4)
@@ -30,7 +30,7 @@ class Help(APIView):
 		return Response({'User list' : '/users',
 						'Blogger list' : '/bloggers',
 						'Blogger_followers' : '/bloggers/<id>',
-						'Intersections' : '/intersect',
+						'Intersections' : '/intersect/<blogger_name1>/<blogger_name2>',
 						'Get User Login' : '/getlogin/<id>'})
 
 class InstaUserList(generics.ListAPIView):
