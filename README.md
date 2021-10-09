@@ -20,8 +20,8 @@ First you need to set login/password/proxy in
 `api/management/commands/update_base.py`
 	
 	docker-compose run django python manage.py update_base
-## Add_example_bloggers
-	docker-compose run django python manage.py add_bloggers
+## Add_blogger
+	docker-compose run django python manage.py add_blogger
 ## API
 Access is available with login/password.
 
