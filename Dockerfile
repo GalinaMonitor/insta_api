@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 ENV PYTHONUNBUFFERED=1
 
 RUN pip install --upgrade pip
+RUN apt-get update && apt-get install netcat -y
 
 COPY requirements.txt ./
 
