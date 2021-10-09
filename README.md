@@ -16,6 +16,9 @@ All commands made from insta_api folder
 ## Django
 	docker exec -it django bash
 ## Update base(working too slow)
+First you need to set login/password/proxy in
+`api/management/commands/update_base.py`
+	
 	docker-compose run django python manage.py update_base
 ## Add_example_bloggers
 	docker-compose run django python manage.py add_bloggers
@@ -33,6 +36,4 @@ Go to http://0.0.0.0:8000/ to find help-response
 ## TASKS:
 - optimise everything!!!
 - comments
-- upgrade views.intersec
-- upgrade update_base command maybe with proxy
 - add views to show ratio blogger/blogger
