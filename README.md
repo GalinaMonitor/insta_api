@@ -27,13 +27,12 @@ Access is available with login/password.
 
 Go to http://0.0.0.0:8000/ to find help-response
 
+	INFO			:	/
 	User list		:	/users
 	Blogger list		:	/bloggers
-	Blogger_followers	:	/bloggers/<id>
-	Intersections		:	/intersect
+	Blogger_followers	:	/bloggers/<blogger_name>
+	Intersections		:	/intersect/<blogger_name1>/blogger_name2>
 	Get User Login		:	/getlogin/<id>
 	
 ## TASKS:
-- optimise everything!!!
-- comments
-- add views to show ratio blogger/blogger
+- optimise everything!!! 
