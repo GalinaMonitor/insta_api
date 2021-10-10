@@ -33,4 +33,4 @@ Go to http://0.0.0.0:8000/ to find help-response
 
 ## TASKS:
 - optimise everything!!!
-- add .env for security reasons
+- add .env for security reasons and use os.environ in settings
